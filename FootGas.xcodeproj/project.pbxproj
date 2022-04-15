@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FC5086E2809B93B00E5A851 /* FootGasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5086D2809B93B00E5A851 /* FootGasApp.swift */; };
+		3FC508702809B93B00E5A851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5086F2809B93B00E5A851 /* ContentView.swift */; };
+		3FC508722809B93F00E5A851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC508712809B93F00E5A851 /* Assets.xcassets */; };
+		3FC508752809B93F00E5A851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC508742809B93F00E5A851 /* Preview Assets.xcassets */; };
+		3FC508802809B94000E5A851 /* FootGasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5087F2809B94000E5A851 /* FootGasTests.swift */; };
+		3FC5088A2809B94000E5A851 /* FootGasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508892809B94000E5A851 /* FootGasUITests.swift */; };
+		3FC5088C2809B94000E5A851 /* FootGasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5088B2809B94000E5A851 /* FootGasUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FC5087C2809B94000E5A851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC508622809B93B00E5A851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC508692809B93B00E5A851;
+			remoteInfo = FootGas;
+		};
+		3FC508862809B94000E5A851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FC508622809B93B00E5A851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FC508692809B93B00E5A851;
+			remoteInfo = FootGas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FC5086A2809B93B00E5A851 /* FootGas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootGas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC5086D2809B93B00E5A851 /* FootGasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasApp.swift; sourceTree = "<group>"; };
+		3FC5086F2809B93B00E5A851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FC508712809B93F00E5A851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FC508742809B93F00E5A851 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FC508762809B93F00E5A851 /* FootGas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FootGas.entitlements; sourceTree = "<group>"; };
+		3FC5087B2809B94000E5A851 /* FootGasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootGasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC5087F2809B94000E5A851 /* FootGasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasTests.swift; sourceTree = "<group>"; };
+		3FC508852809B94000E5A851 /* FootGasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootGasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC508892809B94000E5A851 /* FootGasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasUITests.swift; sourceTree = "<group>"; };
+		3FC5088B2809B94000E5A851 /* FootGasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FC508672809B93B00E5A851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC508782809B94000E5A851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC508822809B94000E5A851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FC508612809B93B00E5A851 = {
+			isa = PBXGroup;
+			children = (
+				3FC5086C2809B93B00E5A851 /* FootGas */,
+				3FC5087E2809B94000E5A851 /* FootGasTests */,
+				3FC508882809B94000E5A851 /* FootGasUITests */,
+				3FC5086B2809B93B00E5A851 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FC5086B2809B93B00E5A851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FC5086A2809B93B00E5A851 /* FootGas.app */,
+				3FC5087B2809B94000E5A851 /* FootGasTests.xctest */,
+				3FC508852809B94000E5A851 /* FootGasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FC5086C2809B93B00E5A851 /* FootGas */ = {
+			isa = PBXGroup;
+			children = (
+				3FC5086D2809B93B00E5A851 /* FootGasApp.swift */,
+				3FC5086F2809B93B00E5A851 /* ContentView.swift */,
+				3FC508712809B93F00E5A851 /* Assets.xcassets */,
+				3FC508762809B93F00E5A851 /* FootGas.entitlements */,
+				3FC508732809B93F00E5A851 /* Preview Content */,
+			);
+			path = FootGas;
+			sourceTree = "<group>";
+		};
+		3FC508732809B93F00E5A851 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3FC508742809B93F00E5A851 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3FC5087E2809B94000E5A851 /* FootGasTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC5087F2809B94000E5A851 /* FootGasTests.swift */,
+			);
+			path = FootGasTests;
+			sourceTree = "<group>";
+		};
+		3FC508882809B94000E5A851 /* FootGasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FC508892809B94000E5A851 /* FootGasUITests.swift */,
+				3FC5088B2809B94000E5A851 /* FootGasUITestsLaunchTests.swift */,
+			);
+			path = FootGasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FC508692809B93B00E5A851 /* FootGas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC5088F2809B94000E5A851 /* Build configuration list for PBXNativeTarget "FootGas" */;
+			buildPhases = (
+				3FC508662809B93B00E5A851 /* Sources */,
+				3FC508672809B93B00E5A851 /* Frameworks */,
+				3FC508682809B93B00E5A851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootGas;
+			productName = FootGas;
+			productReference = 3FC5086A2809B93B00E5A851 /* FootGas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FC5087A2809B94000E5A851 /* FootGasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC508922809B94000E5A851 /* Build configuration list for PBXNativeTarget "FootGasTests" */;
+			buildPhases = (
+				3FC508772809B94000E5A851 /* Sources */,
+				3FC508782809B94000E5A851 /* Frameworks */,
+				3FC508792809B94000E5A851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC5087D2809B94000E5A851 /* PBXTargetDependency */,
+			);
+			name = FootGasTests;
+			productName = FootGasTests;
+			productReference = 3FC5087B2809B94000E5A851 /* FootGasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FC508842809B94000E5A851 /* FootGasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FC508952809B94000E5A851 /* Build configuration list for PBXNativeTarget "FootGasUITests" */;
+			buildPhases = (
+				3FC508812809B94000E5A851 /* Sources */,
+				3FC508822809B94000E5A851 /* Frameworks */,
+				3FC508832809B94000E5A851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FC508872809B94000E5A851 /* PBXTargetDependency */,
+			);
+			name = FootGasUITests;
+			productName = FootGasUITests;
+			productReference = 3FC508852809B94000E5A851 /* FootGasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FC508622809B93B00E5A851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3FC508692809B93B00E5A851 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					3FC5087A2809B94000E5A851 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3FC508692809B93B00E5A851;
+					};
+					3FC508842809B94000E5A851 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3FC508692809B93B00E5A851;
+					};
+				};
+			};
+			buildConfigurationList = 3FC508652809B93B00E5A851 /* Build configuration list for PBXProject "FootGas" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FC508612809B93B00E5A851;
+			productRefGroup = 3FC5086B2809B93B00E5A851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FC508692809B93B00E5A851 /* FootGas */,
+				3FC5087A2809B94000E5A851 /* FootGasTests */,
+				3FC508842809B94000E5A851 /* FootGasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FC508682809B93B00E5A851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC508752809B93F00E5A851 /* Preview Assets.xcassets in Resources */,
+				3FC508722809B93F00E5A851 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC508792809B94000E5A851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC508832809B94000E5A851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FC508662809B93B00E5A851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC508702809B93B00E5A851 /* ContentView.swift in Sources */,
+				3FC5086E2809B93B00E5A851 /* FootGasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC508772809B94000E5A851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC508802809B94000E5A851 /* FootGasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FC508812809B94000E5A851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC5088C2809B94000E5A851 /* FootGasUITestsLaunchTests.swift in Sources */,
+				3FC5088A2809B94000E5A851 /* FootGasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FC5087D2809B94000E5A851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC508692809B93B00E5A851 /* FootGas */;
+			targetProxy = 3FC5087C2809B94000E5A851 /* PBXContainerItemProxy */;
+		};
+		3FC508872809B94000E5A851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FC508692809B93B00E5A851 /* FootGas */;
+			targetProxy = 3FC508862809B94000E5A851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FC5088D2809B94000E5A851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FC5088E2809B94000E5A851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3FC508902809B94000E5A851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FootGas/FootGas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FootGas/Preview Content\"";
+				DEVELOPMENT_TEAM = 33HQPCBBL8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FC508912809B94000E5A851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FootGas/FootGas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FootGas/Preview Content\"";
+				DEVELOPMENT_TEAM = 33HQPCBBL8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3FC508932809B94000E5A851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33HQPCBBL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootGas.app/Contents/MacOS/FootGas";
+			};
+			name = Debug;
+		};
+		3FC508942809B94000E5A851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33HQPCBBL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootGas.app/Contents/MacOS/FootGas";
+			};
+			name = Release;
+		};
+		3FC508962809B94000E5A851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33HQPCBBL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FootGas;
+			};
+			name = Debug;
+		};
+		3FC508972809B94000E5A851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33HQPCBBL8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = FootGas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FC508652809B93B00E5A851 /* Build configuration list for PBXProject "FootGas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC5088D2809B94000E5A851 /* Debug */,
+				3FC5088E2809B94000E5A851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC5088F2809B94000E5A851 /* Build configuration list for PBXNativeTarget "FootGas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC508902809B94000E5A851 /* Debug */,
+				3FC508912809B94000E5A851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC508922809B94000E5A851 /* Build configuration list for PBXNativeTarget "FootGasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC508932809B94000E5A851 /* Debug */,
+				3FC508942809B94000E5A851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FC508952809B94000E5A851 /* Build configuration list for PBXNativeTarget "FootGasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC508962809B94000E5A851 /* Debug */,
+				3FC508972809B94000E5A851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FC508622809B93B00E5A851 /* Project object */;
+}
