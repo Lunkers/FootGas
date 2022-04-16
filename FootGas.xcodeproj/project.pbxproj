@@ -14,6 +14,13 @@
 		3FC508802809B94000E5A851 /* FootGasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5087F2809B94000E5A851 /* FootGasTests.swift */; };
 		3FC5088A2809B94000E5A851 /* FootGasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508892809B94000E5A851 /* FootGasUITests.swift */; };
 		3FC5088C2809B94000E5A851 /* FootGasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5088B2809B94000E5A851 /* FootGasUITestsLaunchTests.swift */; };
+		3FC5089C2809B9B600E5A851 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5089B2809B9B600E5A851 /* Input.swift */; };
+		3FC5089E2809B9C700E5A851 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5089D2809B9C700E5A851 /* Output.swift */; };
+		3FC508A02809BE5800E5A851 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5089F2809BE5800E5A851 /* Store.swift */; };
+		3FC508A42809C05F00E5A851 /* JobEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508A32809C05F00E5A851 /* JobEditor.swift */; };
+		3FC508A62809C10600E5A851 /* TranscodingJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508A52809C10600E5A851 /* TranscodingJob.swift */; };
+		3FC508A92809D1FC00E5A851 /* FFMPEGRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508A82809D1FC00E5A851 /* FFMPEGRunner.swift */; };
+		3FC508AB280B03E700E5A851 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508AA280B03E700E5A851 /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		3FC508852809B94000E5A851 /* FootGasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootGasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC508892809B94000E5A851 /* FootGasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasUITests.swift; sourceTree = "<group>"; };
 		3FC5088B2809B94000E5A851 /* FootGasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FC5089B2809B9B600E5A851 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		3FC5089D2809B9C700E5A851 /* Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		3FC5089F2809BE5800E5A851 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		3FC508A32809C05F00E5A851 /* JobEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobEditor.swift; sourceTree = "<group>"; };
+		3FC508A52809C10600E5A851 /* TranscodingJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscodingJob.swift; sourceTree = "<group>"; };
+		3FC508A82809D1FC00E5A851 /* FFMPEGRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFMPEGRunner.swift; sourceTree = "<group>"; };
+		3FC508AA280B03E700E5A851 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +109,11 @@
 		3FC5086C2809B93B00E5A851 /* FootGas */ = {
 			isa = PBXGroup;
 			children = (
+				3FC508A72809D18C00E5A851 /* Ffmpeg */,
+				3FC5089A2809B96F00E5A851 /* Navigation */,
+				3FC508992809B96200E5A851 /* Views */,
+				3FC508982809B95100E5A851 /* Model */,
 				3FC5086D2809B93B00E5A851 /* FootGasApp.swift */,
-				3FC5086F2809B93B00E5A851 /* ContentView.swift */,
 				3FC508712809B93F00E5A851 /* Assets.xcassets */,
 				3FC508762809B93F00E5A851 /* FootGas.entitlements */,
 				3FC508732809B93F00E5A851 /* Preview Content */,
@@ -127,6 +144,42 @@
 				3FC5088B2809B94000E5A851 /* FootGasUITestsLaunchTests.swift */,
 			);
 			path = FootGasUITests;
+			sourceTree = "<group>";
+		};
+		3FC508982809B95100E5A851 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FC5089B2809B9B600E5A851 /* Input.swift */,
+				3FC5089D2809B9C700E5A851 /* Output.swift */,
+				3FC5089F2809BE5800E5A851 /* Store.swift */,
+				3FC508A52809C10600E5A851 /* TranscodingJob.swift */,
+				3FC508AA280B03E700E5A851 /* Stream.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FC508992809B96200E5A851 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3FC5089A2809B96F00E5A851 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3FC5086F2809B93B00E5A851 /* ContentView.swift */,
+				3FC508A32809C05F00E5A851 /* JobEditor.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3FC508A72809D18C00E5A851 /* Ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				3FC508A82809D1FC00E5A851 /* FFMPEGRunner.swift */,
+			);
+			path = Ffmpeg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC508A02809BE5800E5A851 /* Store.swift in Sources */,
+				3FC5089E2809B9C700E5A851 /* Output.swift in Sources */,
+				3FC508A42809C05F00E5A851 /* JobEditor.swift in Sources */,
+				3FC5089C2809B9B600E5A851 /* Input.swift in Sources */,
+				3FC508A92809D1FC00E5A851 /* FFMPEGRunner.swift in Sources */,
 				3FC508702809B93B00E5A851 /* ContentView.swift in Sources */,
+				3FC508A62809C10600E5A851 /* TranscodingJob.swift in Sources */,
+				3FC508AB280B03E700E5A851 /* Stream.swift in Sources */,
 				3FC5086E2809B93B00E5A851 /* FootGasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
