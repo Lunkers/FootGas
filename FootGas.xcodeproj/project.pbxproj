@@ -21,6 +21,9 @@
 		3FC508A62809C10600E5A851 /* TranscodingJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508A52809C10600E5A851 /* TranscodingJob.swift */; };
 		3FC508A92809D1FC00E5A851 /* FFMPEGRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508A82809D1FC00E5A851 /* FFMPEGRunner.swift */; };
 		3FC508AB280B03E700E5A851 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508AA280B03E700E5A851 /* Stream.swift */; };
+		3FC508AD280B059800E5A851 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508AC280B059800E5A851 /* Format.swift */; };
+		3FC508B0280B064B00E5A851 /* FffProbeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508AF280B064B00E5A851 /* FffProbeResult.swift */; };
+		3FC508B2280B06DB00E5A851 /* FFProbeRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC508B1280B06DB00E5A851 /* FFProbeRunner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		3FC508A52809C10600E5A851 /* TranscodingJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscodingJob.swift; sourceTree = "<group>"; };
 		3FC508A82809D1FC00E5A851 /* FFMPEGRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFMPEGRunner.swift; sourceTree = "<group>"; };
 		3FC508AA280B03E700E5A851 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		3FC508AC280B059800E5A851 /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		3FC508AF280B064B00E5A851 /* FffProbeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FffProbeResult.swift; sourceTree = "<group>"; };
+		3FC508B1280B06DB00E5A851 /* FFProbeRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFProbeRunner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,11 +155,11 @@
 		3FC508982809B95100E5A851 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3FC508AE280B059C00E5A851 /* ffprobe */,
 				3FC5089B2809B9B600E5A851 /* Input.swift */,
 				3FC5089D2809B9C700E5A851 /* Output.swift */,
 				3FC5089F2809BE5800E5A851 /* Store.swift */,
 				3FC508A52809C10600E5A851 /* TranscodingJob.swift */,
-				3FC508AA280B03E700E5A851 /* Stream.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,9 +183,20 @@
 		3FC508A72809D18C00E5A851 /* Ffmpeg */ = {
 			isa = PBXGroup;
 			children = (
+				3FC508B1280B06DB00E5A851 /* FFProbeRunner.swift */,
 				3FC508A82809D1FC00E5A851 /* FFMPEGRunner.swift */,
 			);
 			path = Ffmpeg;
+			sourceTree = "<group>";
+		};
+		3FC508AE280B059C00E5A851 /* ffprobe */ = {
+			isa = PBXGroup;
+			children = (
+				3FC508AA280B03E700E5A851 /* Stream.swift */,
+				3FC508AC280B059800E5A851 /* Format.swift */,
+				3FC508AF280B064B00E5A851 /* FffProbeResult.swift */,
+			);
+			path = ffprobe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,13 +331,16 @@
 			files = (
 				3FC508A02809BE5800E5A851 /* Store.swift in Sources */,
 				3FC5089E2809B9C700E5A851 /* Output.swift in Sources */,
+				3FC508AD280B059800E5A851 /* Format.swift in Sources */,
 				3FC508A42809C05F00E5A851 /* JobEditor.swift in Sources */,
+				3FC508B2280B06DB00E5A851 /* FFProbeRunner.swift in Sources */,
 				3FC5089C2809B9B600E5A851 /* Input.swift in Sources */,
 				3FC508A92809D1FC00E5A851 /* FFMPEGRunner.swift in Sources */,
 				3FC508702809B93B00E5A851 /* ContentView.swift in Sources */,
 				3FC508A62809C10600E5A851 /* TranscodingJob.swift in Sources */,
 				3FC508AB280B03E700E5A851 /* Stream.swift in Sources */,
 				3FC5086E2809B93B00E5A851 /* FootGasApp.swift in Sources */,
+				3FC508B0280B064B00E5A851 /* FffProbeResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

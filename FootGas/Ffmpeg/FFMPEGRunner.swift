@@ -31,6 +31,7 @@ class FfmpegRunner {
         
         do {
             try ffmpegProcess.run()
+            ffmpegProcess.waitUntilExit()
         } catch {
             print("Failed to run ffmpeg!")
         }
