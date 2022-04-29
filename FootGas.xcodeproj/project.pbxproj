@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3520425A281BD20C00FABB70 /* AddJobButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35204259281BD20C00FABB70 /* AddJobButton.swift */; };
+		3520425D281BD73600FABB70 /* MediaInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520425C281BD73600FABB70 /* MediaInfoService.swift */; };
+		356A6063281BC9E000BF5598 /* TranscodingCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356A6062281BC9E000BF5598 /* TranscodingCommands.swift */; };
 		3FC5086E2809B93B00E5A851 /* FootGasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5086D2809B93B00E5A851 /* FootGasApp.swift */; };
 		3FC508702809B93B00E5A851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC5086F2809B93B00E5A851 /* ContentView.swift */; };
 		3FC508722809B93F00E5A851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC508712809B93F00E5A851 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35204259281BD20C00FABB70 /* AddJobButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddJobButton.swift; path = FootGas/Menu/AddJobButton.swift; sourceTree = SOURCE_ROOT; };
+		3520425C281BD73600FABB70 /* MediaInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaInfoService.swift; sourceTree = "<group>"; };
+		356A6062281BC9E000BF5598 /* TranscodingCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscodingCommands.swift; sourceTree = "<group>"; };
 		3FC5086A2809B93B00E5A851 /* FootGas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootGas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC5086D2809B93B00E5A851 /* FootGasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootGasApp.swift; sourceTree = "<group>"; };
 		3FC5086F2809B93B00E5A851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3520425B281BD72000FABB70 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3520425C281BD73600FABB70 /* MediaInfoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		356A6061281BC9C400BF5598 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				356A6062281BC9E000BF5598 /* TranscodingCommands.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		3FC508612809B93B00E5A851 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +137,8 @@
 		3FC5086C2809B93B00E5A851 /* FootGas */ = {
 			isa = PBXGroup;
 			children = (
+				3520425B281BD72000FABB70 /* Service */,
+				356A6061281BC9C400BF5598 /* Menu */,
 				3FC508A72809D18C00E5A851 /* Ffmpeg */,
 				3FC5089A2809B96F00E5A851 /* Navigation */,
 				3FC508992809B96200E5A851 /* Views */,
@@ -167,6 +191,7 @@
 		3FC508992809B96200E5A851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				35204259281BD20C00FABB70 /* AddJobButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,14 +356,17 @@
 			files = (
 				3FC508A02809BE5800E5A851 /* Store.swift in Sources */,
 				3FC5089E2809B9C700E5A851 /* Output.swift in Sources */,
+				3520425D281BD73600FABB70 /* MediaInfoService.swift in Sources */,
 				3FC508AD280B059800E5A851 /* Format.swift in Sources */,
 				3FC508A42809C05F00E5A851 /* JobEditor.swift in Sources */,
 				3FC508B2280B06DB00E5A851 /* FFProbeRunner.swift in Sources */,
 				3FC5089C2809B9B600E5A851 /* Input.swift in Sources */,
 				3FC508A92809D1FC00E5A851 /* FFMPEGRunner.swift in Sources */,
+				3520425A281BD20C00FABB70 /* AddJobButton.swift in Sources */,
 				3FC508702809B93B00E5A851 /* ContentView.swift in Sources */,
 				3FC508A62809C10600E5A851 /* TranscodingJob.swift in Sources */,
 				3FC508AB280B03E700E5A851 /* Stream.swift in Sources */,
+				356A6063281BC9E000BF5598 /* TranscodingCommands.swift in Sources */,
 				3FC5086E2809B93B00E5A851 /* FootGasApp.swift in Sources */,
 				3FC508B0280B064B00E5A851 /* FffProbeResult.swift in Sources */,
 			);
@@ -504,11 +532,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,11 +561,13 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FredrikLundkvist.FootGas;
 				PRODUCT_NAME = "$(TARGET_NAME)";

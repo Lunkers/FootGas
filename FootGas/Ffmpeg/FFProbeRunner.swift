@@ -26,7 +26,7 @@ class FFProbeRunner {
     
     private func runFfProbe(fileName: String) -> Data? {
         let process = Process()
-        process.executableURL = URL(string: FFProbeRunner.urlString)
+        process.executableURL = URL(fileURLWithPath: FFProbeRunner.urlString)
         
         let commands = [
             "-i",
@@ -49,12 +49,17 @@ class FFProbeRunner {
             try
             process.run()
             process.waitUntilExit()
+            print("ffprobe complete")
             if let data = try? Data(outputPipe.fileHandleForReading.readToEnd()!) {
+                print(data)
                 return data
             } else {
+                print("No data")
                 return nil
             }
         } catch {
+            print ("error when trying to run process")
+            print("More info: \(error)")
             return nil
         }
     }

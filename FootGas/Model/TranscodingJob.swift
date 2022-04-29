@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct TranscodingJob: Identifiable, Codable {
+struct TranscodingJob: Identifiable & Codable {
 
     var id = UUID()
-    var input: String
+    var inputUrl: String
+    var fileName: String
+    var input: AudioVideoInput?
+    var streams: [Stream]?
+    var format: Format?
 }
 
 extension UUID: RawRepresentable {
@@ -25,6 +29,6 @@ extension UUID: RawRepresentable {
 
 extension TranscodingJob {
     static var placeholder: Self {
-        TranscodingJob(id: UUID(), input: "File.mp4")
+        TranscodingJob(id: UUID(), inputUrl: "File.mp4", fileName: "PlaceholderName")
     }
 }

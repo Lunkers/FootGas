@@ -14,9 +14,10 @@ struct JobEditor: View {
     
     var body: some View {
         VStack {
-            Text(job.input)
+            Text(job.fileName)
                 .font(.title)
                 .padding()
+            Text("File path: \(job.inputUrl)")
             Text("Job id: \(job.id.uuidString)")
         }.frame(minWidth: 450)
     }

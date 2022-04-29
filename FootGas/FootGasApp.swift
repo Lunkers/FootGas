@@ -17,5 +17,8 @@ struct FootGasApp: App {
             ContentView()
                 .environmentObject(store)
         }
+        .commands {
+            SidebarCommands()
+        }
     }
 }

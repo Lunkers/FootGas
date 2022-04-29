@@ -17,13 +17,13 @@ protocol Input {
     
 }
 
-struct AudioInput: Input {
+struct AudioInput: Input & Codable {
     
-    var uri: String 
+    var uri: String
     
     var params: [String: String]
     
-    var type: String
+    var type: String = "AUDIO"
     
     var audioLabel: String
     
@@ -34,13 +34,13 @@ struct AudioInput: Input {
     
 }
 
-struct VideoInput: Input {
+struct VideoInput: Input & Codable {
     
     var uri: String
     
     var params: [String: String]
     
-    var type: String
+    var type: String = "VIDEO"
     
     var videoLabel: String
     
@@ -49,6 +49,31 @@ struct VideoInput: Input {
     var videoFilters: [String]
     
     var videoStream: Int?
+    
+}
+
+struct AudioVideoInput: Input & Codable {
+    var uri: String
+    
+    var videoLabel: String = "main"
+    
+    var audioLabel: String = "main"
+    
+    var params: [String: String]
+    
+    var dar: String
+    
+    var useFirstAudioStreams: Int?
+    
+    var videoFilters: [String]
+    
+    var AudioFilters: [String]
+    
+    var type: String = "AudioVideo"
+    
+    var videoStream: Int? = nil
+    
+    var audioStream: Int? = nil
     
 }
 

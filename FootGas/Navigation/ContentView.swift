@@ -37,9 +37,16 @@ struct Sidebar: View {
     @Binding var selection: TranscodingJob.ID?
     
     var body: some View {
-        List(store.jobs, selection: $selection) {
-            job in
-            Label(job.input, systemImage: "video.square")
-        }.frame(minWidth: 250)
+        if (!store.jobs.isEmpty) {
+            Text("Transcoding Jobs")
+            List(store.jobs, selection: $selection) {
+                job in
+                Label(job.inputUrl, systemImage: "video.square")
+            }.frame(minWidth: 250)
+        } else {
+            VStack {
+                AddJobButton()
+            }
+        }
     }
 }
