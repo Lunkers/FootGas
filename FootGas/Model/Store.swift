@@ -31,11 +31,10 @@ class Store: ObservableObject {
     }
     
     func addTranscodingJob(url: URL?, fileName: String) throws{
-            let probeResult = ffProbeRunner.probeFile(fileName: url!.path)
-            let input = AudioVideoInput(uri: url!.path, params: [:], dar: "", videoFilters: [], AudioFilters: [])
-            
-            let job = TranscodingJob(inputUrl: url!.path, fileName: fileName, input: input, streams: probeResult?.streams, format: probeResult?.format)
-            
-            jobs.append(job)
+        let probeResult = ffProbeRunner.probeFile(fileName: url!.path)
+        let input = AudioVideoInput(uri: url!.path, params: [:], dar: "", videoFilters: [], AudioFilters: [])
+        let job = TranscodingJob(inputUrl: url!.path, fileName: fileName, input: input, streams: probeResult?.streams ?? [], format: probeResult?.format)
+        
+        jobs.append(job)
     }
 }

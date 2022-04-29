@@ -13,15 +13,19 @@ class FFProbeRunner {
     
     func probeFile(fileName: String) -> FfprobeResult? {
         let decoder = JSONDecoder()
-        
         let resultJson = runFfProbe(fileName: fileName)
-        
-        if let probeResult = try? decoder.decode(FfprobeResult.self, from: resultJson!) {
+        do {
+            let probeResult: FfprobeResult = try decoder.decode(FfprobeResult.self, from: resultJson!)
+            print(probeResult)
             return probeResult
-        }
-        else {
+            
+            
+        } catch {
+            print("JSON decode failed")
+            print(error)
             return nil
         }
+        
     }
     
     private func runFfProbe(fileName: String) -> Data? {
@@ -49,10 +53,9 @@ class FFProbeRunner {
             try
             process.run()
             process.waitUntilExit()
-            print("ffprobe complete")
             if let data = try? Data(outputPipe.fileHandleForReading.readToEnd()!) {
-                print(data)
-                return data
+                
+                return String(decoding: data, as: UTF8.self).data(using: .utf8)
             } else {
                 print("No data")
                 return nil

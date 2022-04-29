@@ -7,6 +7,7 @@
 
 import Foundation
 
+//TODO: Convert string results to numerical types
 struct Stream: Codable {
     let index: Int
     let codec_name: String?
@@ -16,12 +17,18 @@ struct Stream: Codable {
     let codec_tag: String
     let codec_tag_string: String
     let start_pts: Int64?
-    let start_time: Double?
+    let start_time: String?
     let duration_ts: Int64?
-    let duration: Double?
-    let bit_rate: Int64?
-    let max_bitrate: Int64?
-    let bits_per_raw_sample: Int?
-    let nb_frames: Int?
+    let duration: String?
+    let bit_rate: String?
+    let max_bitrate: String?
+    let bits_per_raw_sample: String?
+    let nb_frames: String?
 }
 
+extension Stream: Identifiable {
+    public typealias ID = Int
+    public var id: Int {
+        return index
+    }
+}

@@ -12,6 +12,14 @@ struct JobEditor: View {
     
     @Binding var selection: TranscodingJob.ID?
     
+    var table: some View {
+        Table(streams) {
+            TableColumn("StreamType", value: \.codec_type!)
+            TableColumn("Codec", value: \.codec_name!)
+            TableColumn("Bitrate", value:\.bit_rate!)
+        }
+    }
+    
     var body: some View {
         VStack {
             Text(job.fileName)
@@ -19,7 +27,9 @@ struct JobEditor: View {
                 .padding()
             Text("File path: \(job.inputUrl)")
             Text("Job id: \(job.id.uuidString)")
-        }.frame(minWidth: 450)
+            table
+                .navigationTitle(job.fileName)
+        }
     }
 }
 
@@ -38,5 +48,9 @@ extension JobEditor {
     
     var jobBinding: Binding<TranscodingJob> {
         $store[selection]
+    }
+    
+    var streams: [Stream] {
+        return job.streams
     }
 }

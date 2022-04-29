@@ -38,10 +38,13 @@ struct Sidebar: View {
     
     var body: some View {
         if (!store.jobs.isEmpty) {
-            Text("Transcoding Jobs")
-            List(store.jobs, selection: $selection) {
-                job in
-                Label(job.inputUrl, systemImage: "video.square")
+            VStack{
+                Text("Transcoding Jobs")
+                List(store.jobs, selection: $selection) {
+                    job in
+                    Label(job.inputUrl, systemImage: "video.square")
+                }
+                AddJobButton()
             }.frame(minWidth: 250)
         } else {
             VStack {
